@@ -2,9 +2,8 @@
     <div class="prospects">
         <div class="fields">
             <div class="field">Nom</div>
+            <div class="field">Prenom</div>
             <div class="field">Email</div>
-            <div class="field">Telephone</div>
-            <div class="field">Message</div>
         </div>
         <div class="prospect" v-for="prospect in prospects"
         :key="prospect.id">
@@ -12,13 +11,10 @@
                 {{prospect.name}}
             </div>
             <div class="email">
-                {{prospect.email}}
+                {{prospect.firstname}}
             </div>
             <div class="telephone">
-                {{prospect.telephone}}
-            </div>
-            <div class="message">
-                {{prospect.message}}
+                {{prospect.email}}
             </div>
             <div>
                 <button @click="remove(prospect.id)">supprimer</button>
